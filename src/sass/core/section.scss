@@ -1,0 +1,85 @@
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    &_face {
+        padding-bottom: 30px;
+        background-image: url("../media/section/face.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+
+    &_problems {
+        padding-top: 200px;
+        padding-bottom: 160px;
+        background-image: url("../media/section/problems.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
+}
+
+.section__title {
+    font-family: 'MinionPro', serif;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a244f;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+    .section {
+        &_face {
+            padding-top: 30px;
+            background-image: url("../media/section/face-1280.jpg");
+        }
+
+        &_problems {
+            padding-top: 160px;
+            padding-bottom: 230px;
+            background-image: url("../media/section/problems-1280.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 42px;
+        line-height: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+
+        &_face {
+            padding-top: 30px;
+            background-image: url("../media/section/face-768.jpg");
+        }
+
+        &_problems {
+            padding-bottom: 220px;
+            background-image: url("../media/section/problems-768.jpg");
+        }
+    }
+
+    .section__title {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .section {
+        padding-top: 30px;
+        padding-bottom: 30px;
+
+        &_problems {
+            padding-bottom: 150px;
+        }
+    }
+
+    .section__title {
+        font-size: 24px;
+        line-height: 1;
+    }
+}
