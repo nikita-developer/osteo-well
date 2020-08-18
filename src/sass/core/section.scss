@@ -17,6 +17,13 @@
         background-position: center bottom;
         background-size: cover;
     }
+
+    &_stop {
+        padding-bottom: 160px;
+        background-image: url("../media/section/stop.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
 }
 
 .section__title {
@@ -38,6 +45,10 @@
             padding-top: 160px;
             padding-bottom: 230px;
             background-image: url("../media/section/problems-1280.jpg");
+        }
+
+        &_stop {
+            background-image: url("../media/section/stop-1280.jpg");
         }
     }
 
