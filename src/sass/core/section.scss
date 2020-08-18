@@ -39,6 +39,12 @@
         background-position: center bottom;
         background-size: 100% auto;
     }
+
+    &_effect {
+        background-image: url("../media/section/effect.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
 }
 
 .section__title {
