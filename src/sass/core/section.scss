@@ -24,6 +24,13 @@
         background-position: center bottom;
         background-size: cover;
     }
+
+    &_pain {
+        padding-bottom: 30px;
+        background-image: url("../media/section/pain.jpg");
+        background-position: center bottom;
+        background-size: cover;
+    }
 }
 
 .section__title {
@@ -71,6 +78,10 @@
         &_problems {
             padding-bottom: 220px;
             background-image: url("../media/section/problems-768.jpg");
+        }
+
+        &_pain {
+            background-image: url("../media/section/pain-768.jpg");
         }
     }
 
