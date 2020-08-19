@@ -131,35 +131,6 @@
 @media (max-width: 768px) {
     .application__list {
         flex-wrap: wrap;
-    }
-
-    .application__item {
-        max-width: 210px;
-
-        &::before {
-            display: none;
-        }
-
-        &:nth-child(2) {
-            margin-top: 0;
-        }
-
-        &:nth-child(3) {
-            margin-top: 30px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-    }
-
-    .application__media {
-        width: 210px;
-        height: 210px;
-        border-width: 8px;
-    }
-}
-
-@media (max-width: 480px) {
-    .application__list {
         justify-content: center;
     }
 
@@ -169,6 +140,10 @@
 
         & + & {
             margin-top: 30px;
+        }
+
+        &::before {
+            display: none;
         }
     }
 

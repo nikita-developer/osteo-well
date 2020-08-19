@@ -1,0 +1,128 @@
+
+.order__title {
+    margin-bottom: 30px;
+    font-size: 61px;
+    text-align: center;
+}
+
+.order__list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.order__item {
+    max-width: 400px;
+
+    &:nth-child(1) {
+        & .order__media {
+            background-image: url("../media/order/img-1.jpg");
+        }
+    }
+
+    &:nth-child(2) {
+        & .order__media {
+            background-image: url("../media/order/img-2.jpg");
+        }
+    }
+
+    &:nth-child(3) {
+        & .order__media {
+            background-image: url("../media/order/img-3.jpg");
+
+            &::before {
+                display: none;
+            }
+        }
+    }
+}
+
+.order__media {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-bottom: 30px;
+    background-size: cover;
+    border: 10px solid #fff;
+
+    &::before {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        z-index: 5;
+        width: 47px;
+        height: 47px;
+        margin-top: -23px;
+        margin-right: -46px;
+        content: '';
+        background-image: url("../media/order/arrow.png");
+        background-size: cover;
+    }
+}
+
+.order__description {
+    font-size: 20px;
+    color: #1a244f;
+    text-align: center;
+}
+
+@media (max-width: 1280px) {
+    .order__item {
+        max-width: 230px;
+    }
+
+    .order__media {
+        width: 230px;
+        height: 230px;
+
+        &::before {
+            width: 28px;
+            height: 28px;
+            margin-top: -18px;
+            margin-right: -36px;
+        }
+    }
+
+    .order__description {
+        max-width: 184px;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .order__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order__item {
+        width: 280px;
+        max-width: 320px;
+
+        &::before {
+            display: none;
+        }
+
+        &:nth-child(3) {
+            margin-top: 30px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        & + & {
+            margin-top: 30px;
+        }
+    }
+
+    .order__media {
+        width: 280px;
+        height: 280px;
+        margin-bottom: 10px;
+        border-width: 8px;
+
+        &::before {
+            display: none;
+        }
+    }
+}
