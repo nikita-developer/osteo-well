@@ -53,6 +53,12 @@
     &_order {
         background-color: #e0eaef;
     }
+
+    &_warning {
+        background-image: url("../media/section/warning.jpg");
+        background-position: center center;
+        background-size: cover;
+    }
 }
 
 .section__title {
