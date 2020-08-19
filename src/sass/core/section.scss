@@ -59,6 +59,14 @@
         background-position: center center;
         background-size: cover;
     }
+
+    &_info {
+        padding-top: 120px;
+    }
+
+    &_footer {
+        padding-top: 120px;
+    }
 }
 
 .section__title {
@@ -89,6 +97,11 @@
         &_step {
             padding-bottom: 23%;
         }
+
+        &_info {
+            padding-top: 80px;
+            padding-bottom: 40px;
+        }
     }
 
     .section__title {
@@ -118,6 +131,11 @@
 
         &_step {
             padding-bottom: 23%;
+        }
+
+        &_info {
+            padding-top: 30px;
+            padding-bottom: 30px;
         }
     }
 
