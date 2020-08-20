@@ -197,6 +197,10 @@
         max-width: 100%;
     }
 
+    .face__garant {
+        max-width: 100%;
+    }
+
     .face__product {
         flex: 0 0 auto;
         max-width: 100px;
@@ -212,6 +216,10 @@
         & img {
             max-width: 35px;
         }
+    }
+
+    .face__garant-item {
+        font-size: 14px;
     }
 }
 

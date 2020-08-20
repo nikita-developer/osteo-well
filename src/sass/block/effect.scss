@@ -106,6 +106,45 @@
         flex: 0 0 100%;
         width: 100%;
         min-width: 230px;
-        max-width: 230px;
+        max-width: 100%;
+        padding-right: 0;
+        padding-bottom: 0;
+        padding-left: 0;
+
+        &:nth-child(1) {
+            background-image: url("../media/effect/bg-1-mobile.jpg");
+        }
+
+        &:nth-child(2) {
+            background-image: url("../media/effect/bg-2-mobile.jpg");
+        }
+
+        &:nth-child(3) {
+            background-image: url("../media/effect/bg-3-mobile.jpg");
+        }
+
+        &:nth-child(4) {
+            background-image: url("../media/effect/bg-4-mobile.jpg");
+        }
+
+        &:nth-child(5) {
+            background-image: url("../media/effect/bg-5-mobile.jpg");
+        }
+
+        & + & {
+            margin-top: 15px;
+        }
+    }
+
+    .effect__name {
+        padding: 15px 15px 10px 15px;
+        margin-bottom: 0;
+        background-color: #fff;
+    }
+
+    .effect__description {
+        padding: 0 15px 15px 15px;
+        color: #000;
+        background-color: #fff;
     }
 }

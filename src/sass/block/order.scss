@@ -13,22 +13,8 @@
 .order__item {
     max-width: 400px;
 
-    &:nth-child(1) {
-        & .order__media {
-            background-image: url("../media/order/img-1.jpg");
-        }
-    }
-
-    &:nth-child(2) {
-        & .order__media {
-            background-image: url("../media/order/img-2.jpg");
-        }
-    }
-
     &:nth-child(3) {
         & .order__media {
-            background-image: url("../media/order/img-3.jpg");
-
             &::before {
                 display: none;
             }
@@ -38,8 +24,6 @@
 
 .order__media {
     position: relative;
-    width: 400px;
-    height: 400px;
     margin-bottom: 30px;
     background-size: cover;
     border: 10px solid #fff;
@@ -71,9 +55,6 @@
     }
 
     .order__media {
-        width: 230px;
-        height: 230px;
-
         &::before {
             width: 28px;
             height: 28px;
@@ -91,38 +72,63 @@
 }
 
 @media (max-width: 768px) {
-    .order__list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .order__item {
-        width: 280px;
-        max-width: 320px;
+        width: calc(33.333% - 10px);
 
         &::before {
             display: none;
         }
-
-        &:nth-child(3) {
-            margin-top: 30px;
-            margin-right: auto;
-            margin-left: auto;
-        }
-
-        & + & {
-            margin-top: 30px;
-        }
     }
 
     .order__media {
-        width: 280px;
-        height: 280px;
         margin-bottom: 10px;
         border-width: 8px;
 
         &::before {
             display: none;
         }
+    }
+}
+
+@media (max-width: 480px) {
+    .order__item {
+        width: calc(33.333% - 5px);
+
+        &::before {
+            display: none;
+        }
+    }
+
+    .order__media {
+        border-width: 2px;
+    }
+}
+
+@media (max-width: 410px) {
+    .order__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .order__item {
+        width: 100%;
+        max-width: 100%;
+
+        &::before {
+            display: none;
+        }
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .order__description {
+        max-width: 100%;
+        font-weight: 700;
+    }
+
+    .order__media {
+        border-width: 10px;
     }
 }

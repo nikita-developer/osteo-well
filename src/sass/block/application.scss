@@ -31,10 +31,6 @@
     }
 
     &:nth-child(1) {
-        & .application__media {
-            background-image: url("../media/application/img-1.jpg");
-        }
-
         &::before {
             margin-top: 300px;
             background-image: url("../media/application/arrow-1.png");
@@ -48,23 +44,11 @@
             margin-top: 25px;
             background-image: url("../media/application/arrow-2.png");
         }
-
-        & .application__media {
-            background-image: url("../media/application/img-2.jpg");
-        }
-    }
-
-    &:nth-child(3) {
-        & .application__media {
-            background-image: url("../media/application/img-3.jpg");
-        }
     }
 }
 
 .application__media {
     position: relative;
-    width: 380px;
-    height: 380px;
     overflow: hidden;
     background-size: cover;
     border: 15px solid #cfd8e2;
@@ -109,11 +93,6 @@
         }
     }
 
-    .application__media {
-        width: 230px;
-        height: 230px;
-    }
-
     .application__count {
         margin-top: 0;
         margin-bottom: 0;
@@ -129,18 +108,9 @@
 }
 
 @media (max-width: 768px) {
-    .application__list {
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-
     .application__item {
         width: 280px;
         max-width: 100%;
-
-        & + & {
-            margin-top: 30px;
-        }
 
         &::before {
             display: none;
@@ -148,8 +118,40 @@
     }
 
     .application__media {
-        width: 280px;
-        height: 280px;
         border-width: 8px;
+    }
+
+    .application__description {
+        font-size: 14px;
+
+        & span {
+            display: block;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .application__list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .application__item {
+        width: 100%;
+        max-width: 366px;
+
+        & + & {
+            margin-top: 20px;
+        }
+    }
+
+    .application__description {
+        max-width: 100%;
+        font-size: 16px;
+        font-weight: 700;
+
+        & span {
+            display: inline;
+        }
     }
 }
